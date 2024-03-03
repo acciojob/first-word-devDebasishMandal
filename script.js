@@ -1,10 +1,13 @@
 function firstWord(s) {
   // your code here
-	let arr=s.split(" ");
+	if(s!=" "){
+		let arr=s.split(" ");
 	return arr[0];
+	}else{
+		return s;
+	}
 }
 
-// Do not change the code below
-
+// Do not change the code 
 const s = prompt("Enter String:");
 alert(firstWord(s));
